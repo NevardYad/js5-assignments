@@ -4,13 +4,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "generate": "ng generate",
+    "generate component": "ng gc",
+    "generate pipe": "ng gp",
+    "generate directive": "ng gd",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "generate": "ng gc",
-    "pipe": "ng gp",
-    "directive": "ng gd"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {

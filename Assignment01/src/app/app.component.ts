@@ -5,6 +5,19 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
+
 export class AppComponent {
-  title = '<span[innerHtml] = "title | safe"></span>';
+  title = 'JsAssignment 01';
+}
+
+export interface Content {
+  id: number;
+  author: string;
+  imgURL?: string;
+  type?: string;
+  title: string;
+  body: string;
+  tags?: string[];
 }
