@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import {Content} from "@angular/compiler/src/render3/r3_ast";
 
 @Component({
   selector: 'app-root',
@@ -8,16 +10,15 @@ import { Component } from '@angular/core';
 
 
 
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'JsAssignment 01';
+
+
+  ngOnInit(): void {
+  }
 }
 
-export interface Content {
-  id: number;
-  author: string;
-  imgURL?: string;
-  type?: string;
-  title: string;
-  body: string;
-  tags?: string[];
-}
+
+
+
+
