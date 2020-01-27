@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import {Content} from "@angular/compiler/src/render3/r3_ast";
+import {Content} from '@angular/compiler/src/render3/r3_ast';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ import {Content} from "@angular/compiler/src/render3/r3_ast";
 
 
 export class AppComponent implements OnInit{
-  title = 'JsAssignment 01';
+  title = 'JsAssignment 02';
 
 
   ngOnInit(): void {
