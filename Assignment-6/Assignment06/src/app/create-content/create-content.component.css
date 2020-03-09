@@ -1,0 +1,17 @@
+label{
+  color: white;
+  width: 10%;
+}
+
+form{
+  text-align: center;
+  width: 30%;
+}
+
+form input{
+  width: 100%;
+}
+
+div{
+  float: right;
+}

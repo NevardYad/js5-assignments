@@ -1,0 +1,24 @@
+<form #it="ngForm" (ngSubmit)="onSubmit(it)">
+  <label>Show Title
+    <input ngModel name="title" required #title="ngModel" >
+  </label>
+  <label> Show Creator
+    <input ngModel required name="creator" #creator="ngModel">
+  </label>
+  <label>Synopsis
+    <input ngModel required name="body" #body="ngModel">
+  </label>
+  <label>Image URL
+    <input ngModel name="imgUrl" #imgUrl="ngModel">
+  </label>
+  <label>Intended Audience
+    <select #intendAudi="ngModel" ngModel name="intendAudi">
+    <option *ngFor="let Audi of IntendAudi" [value]="Audi">
+      {{Audi}}
+    </option>
+    </select>
+  </label>
+<button>Submit</button>
+</form>
+<p *ngIf="Successful"> ConGrats Show Added</p>
+<p *ngIf="Failed"> Sorry We Could not add</p>
